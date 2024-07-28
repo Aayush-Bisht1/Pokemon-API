@@ -38,7 +38,7 @@ const PokemonList = () => {
             </div>
             <div className="mx-2 mt-5">
                 {filteredPokemon.map(p => (
-                    <div key={p.id} className="card bg-dark text-light mb-3 d-inline-block gap-4 my-3 mx-3 px-2 py-2 border border-secondary rounded" style={{maxWidth:"345px"}}>
+                    <div key={p.id} className="card bg-dark text-light mb-3 d-inline-block gap-4 my-3 mx-2 px-2 py-2 border border-secondary rounded" style={{maxWidth:"330px"}}>
                         <img src={p.sprites.front_default} className="card-img-top" style={{height:"200px",width:"320px"}} alt={p.name} />
                         <h2 className="card-title">{p.name}</h2>
                         <p className="card-text"><strong>Type:</strong> {p.types.map(t => t.type.name).join(', ')}</p>
